@@ -1,0 +1,3193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sara ♥</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+    overflow:hidden;
+}
+
+body{
+    font-family:'DM Sans',sans-serif;
+    color:#fff5f8;
+    background:
+        radial-gradient(circle at 12% 15%,rgba(255,255,255,.82) 0 2px,transparent 3px),
+        radial-gradient(circle at 28% 8%,rgba(255,255,255,.75) 0 1.5px,transparent 2.5px),
+        radial-gradient(circle at 76% 12%,rgba(255,255,255,.85) 0 2px,transparent 3px),
+        radial-gradient(circle at 91% 30%,rgba(255,255,255,.7) 0 1.5px,transparent 2.5px),
+        radial-gradient(circle at 60% 22%,rgba(255,255,255,.65) 0 1.5px,transparent 2.5px),
+        linear-gradient(
+            180deg,
+            #65c9f5 0%,
+            #9edff8 25%,
+            #cceaf8 45%,
+            #f5d6e7 72%,
+            #ffdce9 100%
+        );
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:-15%;
+    pointer-events:none;
+    z-index:0;
+    background:
+        radial-gradient(
+            ellipse at 18% 27%,
+            rgba(255,255,255,.58) 0 7%,
+            transparent 25%
+        ),
+        radial-gradient(
+            ellipse at 80% 22%,
+            rgba(255,255,255,.48) 0 6%,
+            transparent 24%
+        ),
+        radial-gradient(
+            ellipse at 50% 55%,
+            rgba(255,172,210,.28) 0 10%,
+            transparent 35%
+        );
+    filter:blur(24px);
+    animation:skyFloat 14s ease-in-out infinite alternate;
+}
+
+@keyframes skyFloat{
+    from{
+        transform:translateX(-2%) translateY(0);
+    }
+    to{
+        transform:translateX(2%) translateY(-1%);
+    }
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    opacity:.48;
+    background:
+        radial-gradient(
+            ellipse at 8% 82%,
+            rgba(255,255,255,.75) 0 7%,
+            transparent 22%
+        ),
+        radial-gradient(
+            ellipse at 90% 72%,
+            rgba(255,255,255,.62) 0 7%,
+            transparent 23%
+        ),
+        radial-gradient(
+            ellipse at 52% 90%,
+            rgba(255,255,255,.5) 0 6%,
+            transparent 20%
+        );
+    filter:blur(20px);
+}
+
+.page{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    z-index:1;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px 14px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background:transparent;
+}
+
+.slide.active{
+    display:flex;
+    animation:slideIn .65s ease;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.content{
+    width:min(92vw,520px);
+    max-height:96vh;
+    text-align:center;
+    position:relative;
+    z-index:5;
+}
+
+.top-dots{
+    width:190px;
+    height:27px;
+    margin:0 auto 20px;
+    border:1px solid rgba(255,255,255,.72);
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:rgba(255,255,255,.22);
+    backdrop-filter:blur(12px);
+    box-shadow:
+        0 8px 30px rgba(70,130,170,.15),
+        inset 0 1px 0 rgba(255,255,255,.7);
+}
+
+.top-dots span{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#ff557f;
+}
+
+.top-dots span:nth-child(4){
+    width:32px;
+    border-radius:20px;
+    background:linear-gradient(90deg,#ff416c,#ff9ab5);
+}
+
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
+
+.main-title{
+    font-size:clamp(48px,13vw,78px);
+    line-height:.9;
+    letter-spacing:5px;
+    color:#fff;
+    text-shadow:
+        0 4px 25px rgba(60,110,150,.25),
+        0 0 35px rgba(255,255,255,.3);
+}
+
+.name{
+    margin:15px 0;
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(65px,17vw,100px);
+    color:#ff3f70;
+    text-shadow:
+        0 5px 25px rgba(255,65,110,.28),
+        0 0 40px rgba(255,120,160,.3);
+}
+
+.subtitle{
+    font-size:12px;
+    letter-spacing:4px;
+    color:#8d4560;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.small-text{
+    color:#704d5e;
+    font-size:15px;
+    line-height:1.65;
+}
+
+.btn{
+    position:relative;
+    z-index:100;
+    border:1px solid rgba(255,255,255,.7);
+    outline:0;
+    cursor:pointer;
+    margin-top:22px;
+    padding:14px 28px;
+    min-width:220px;
+    border-radius:40px;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    background:
+        linear-gradient(
+            105deg,
+            #ff315f,
+            #f94d7b 55%,
+            #ff8da9
+        );
+    box-shadow:
+        0 14px 35px rgba(210,55,100,.28),
+        0 0 25px rgba(255,80,130,.2),
+        inset 0 1px 0 rgba(255,255,255,.45);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:
+        0 18px 40px rgba(210,55,100,.35),
+        0 0 30px rgba(255,80,130,.28);
+}
+
+.btn:active{
+    transform:scale(.96);
+}
+
+.btn.light{
+    color:#d93360;
+    background:rgba(255,255,255,.35);
+    border:1px solid rgba(255,100,140,.5);
+}
+
+.decoration{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.float{
+    position:absolute;
+    animation:float 5s ease-in-out infinite;
+    opacity:.75;
+    color:#ff315f;
+    text-shadow:0 0 18px rgba(255,45,100,.3);
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+    50%{
+        transform:translateY(-25px) rotate(7deg);
+    }
+}
+
+.f1{top:12%;left:8%;font-size:24px}
+.f2{top:22%;right:8%;font-size:18px;animation-delay:1s}
+.f3{bottom:18%;left:10%;font-size:20px;animation-delay:2s}
+.f4{bottom:28%;right:12%;font-size:25px;animation-delay:1.5s}
+.f5{top:48%;left:4%;font-size:15px;animation-delay:.5s}
+.f6{top:63%;right:5%;font-size:18px;animation-delay:2.5s}
+
+.wish-star{
+    width:120px;
+    height:120px;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:75px;
+    filter:drop-shadow(0 15px 25px rgba(255,160,40,.3));
+    animation:starFloat 3s ease-in-out infinite;
+}
+
+@keyframes starFloat{
+    50%{
+        transform:translateY(-12px) rotate(5deg);
+    }
+}
+
+.cake-area{
+    margin:0 auto 12px;
+    width:270px;
+    height:235px;
+    position:relative;
+}
+
+.cake{
+    position:absolute;
+    width:210px;
+    height:105px;
+    left:30px;
+    bottom:15px;
+    border-radius:18px 18px 25px 25px;
+    background:linear-gradient(#ff5c87,#e52f61);
+    box-shadow:
+        inset 0 -15px 20px rgba(160,20,60,.2),
+        0 15px 30px rgba(150,50,90,.25);
+}
+
+.cake:before{
+    content:"";
+    position:absolute;
+    width:210px;
+    height:45px;
+    top:-18px;
+    left:0;
+    border-radius:50%;
+    background:linear-gradient(#fff,#ffe6ef);
+    border:2px solid #ff9db7;
+}
+
+.cream{
+    position:absolute;
+    width:210px;
+    height:20px;
+    left:0;
+    top:25px;
+    background:#fff8fb;
+    border-radius:50%;
+}
+
+.cream:before,
+.cream:after{
+    content:"";
+    position:absolute;
+    width:35px;
+    height:20px;
+    background:#fff8fb;
+    border-radius:50%;
+}
+
+.cream:before{left:45px}
+.cream:after{right:45px}
+
+.candle{
+    position:absolute;
+    width:18px;
+    height:65px;
+    bottom:107px;
+    background:repeating-linear-gradient(
+        135deg,
+        #fff 0 7px,
+        #ff4675 7px 14px
+    );
+    border-radius:6px 6px 2px 2px;
+    z-index:5;
+}
+
+.candle:nth-child(1){left:78px}
+.candle:nth-child(2){left:126px}
+.candle:nth-child(3){left:174px}
+
+.flame{
+    position:absolute;
+    width:19px;
+    height:28px;
+    top:-31px;
+    left:-.5px;
+    background:radial-gradient(
+        circle at 50% 70%,
+        #fff 0 18%,
+        #ffd65a 20% 55%,
+        #ff7a32 60%
+    );
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    animation:flicker .15s infinite alternate;
+}
+
+.flame.off{
+    display:none;
+}
+
+@keyframes flicker{
+    from{transform:rotate(-45deg) scale(1)}
+    to{transform:rotate(-42deg) scale(1.08)}
+}
+
+.cake-message{
+    font-family:'Great Vibes',cursive;
+    color:#e42e61;
+    font-size:27px;
+}
+
+.mic-status{
+    margin-top:8px;
+    font-size:14px;
+    color:#79566a;
+}
+
+.mic{
+    font-size:38px;
+    margin-top:8px;
+    animation:micPulse 1s infinite;
+}
+
+@keyframes micPulse{
+    50%{transform:scale(1.1)}
+}
+
+.age-title{
+    font-size:48px;
+    color:#653e52;
+    margin-bottom:5px;
+}
+
+.age-sub{
+    font-family:'Great Vibes',cursive;
+    font-size:27px;
+    color:#e04470;
+    margin-bottom:18px;
+}
+
+.age-card{
+    width:min(94vw,440px);
+    margin:auto;
+    padding:22px 16px;
+    border-radius:28px;
+    background:rgba(255,255,255,.42);
+    border:1px solid rgba(255,255,255,.72);
+    box-shadow:
+        0 25px 55px rgba(100,60,90,.18),
+        inset 0 1px 0 rgba(255,255,255,.7);
+    backdrop-filter:blur(15px);
+}
+
+.age-big{
+    font-family:'Great Vibes',cursive;
+    font-size:46px;
+    color:#e02f61;
+    margin-bottom:8px;
+}
+
+.age-line{
+    font-family:'Cormorant Garamond',serif;
+    font-size:23px;
+    color:#6d4c5c;
+    margin:8px 0;
+}
+
+.age-live{
+    font-size:15px;
+    color:#79586a;
+    margin-top:13px;
+    line-height:1.6;
+}
+
+.age-number{
+    font-weight:700;
+    color:#df315f;
+}
+
+.time-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:16px;
+}
+
+.time-box{
+    padding:11px 7px;
+    border-radius:16px;
+    background:rgba(255,255,255,.4);
+    border:1px solid rgba(255,255,255,.65);
+}
+
+.time-box strong{
+    display:block;
+    font-family:'Cormorant Garamond',serif;
+    font-size:27px;
+    line-height:1.05;
+    color:#df315f;
+}
+
+.time-box span{
+    display:block;
+    margin-top:3px;
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#856477;
+}
+
+.compliment-heading{
+    font-size:42px;
+    color:#653e52;
+    margin-bottom:3px;
+}
+
+.compliment-sub{
+    font-family:'Great Vibes',cursive;
+    color:#e14370;
+    font-size:26px;
+    margin-bottom:17px;
+}
+
+.compliment-card{
+    width:min(92vw,410px);
+    min-height:280px;
+    margin:auto;
+    padding:25px 21px;
+    border-radius:28px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.48),
+            rgba(255,225,237,.42)
+        );
+    border:1px solid rgba(255,255,255,.75);
+    box-shadow:
+        0 25px 55px rgba(120,60,90,.2),
+        inset 0 1px 0 rgba(255,255,255,.8);
+    backdrop-filter:blur(14px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.pretty-symbol{
+    font-size:54px;
+    margin-bottom:13px;
+    color:#ff315f;
+    filter:drop-shadow(0 7px 12px rgba(255,40,90,.28));
+}
+
+.compliment-title{
+    font-family:'Great Vibes',cursive;
+    color:#b82e58;
+    font-size:36px;
+    margin-bottom:11px;
+}
+
+.compliment-text{
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    line-height:1.4;
+    color:#694c5d;
+}
+
+.counter{
+    margin-top:13px;
+    color:#d73562;
+    font-size:14px;
+}
+
+.next-btn{
+    margin-top:15px;
+    margin-bottom:5px;
+    padding:12px 26px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.7);
+    background:rgba(255,255,255,.35);
+    color:#d52e5d;
+    cursor:pointer;
+    font-size:15px;
+    position:relative;
+    z-index:100;
+}
+
+.game-title{
+    font-size:45px;
+    color:#653e52;
+}
+
+.game-sub{
+    font-family:'Great Vibes',cursive;
+    font-size:27px;
+    color:#e14370;
+    margin:5px 0 13px;
+}
+
+.game-area{
+    width:min(92vw,440px);
+    height:350px;
+    margin:auto;
+    position:relative;
+    border-radius:28px;
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(255,75,120,.18),
+            transparent 65%
+        ),
+        rgba(255,255,255,.3);
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:
+        inset 0 0 50px rgba(255,70,120,.12),
+        0 20px 50px rgba(120,50,80,.18);
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+}
+
+.catch-heart{
+    position:absolute;
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    color:#ff174f;
+    cursor:pointer;
+    filter:
+        drop-shadow(0 6px 12px rgba(255,20,80,.4))
+        drop-shadow(0 0 8px rgba(255,70,110,.35));
+    animation:heartFloat 2.5s ease-in-out infinite;
+    transition:.2s;
+}
+
+.catch-heart:hover{
+    transform:scale(1.25);
+}
+
+@keyframes heartFloat{
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+    50%{
+        transform:translateY(-14px) rotate(5deg);
+    }
+}
+
+.game-status{
+    margin:10px auto 0;
+    max-width:420px;
+    min-height:48px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    line-height:1.3;
+    color:#c92957;
+    font-weight:600;
+    padding:7px 12px;
+    border-radius:18px;
+    background:rgba(255,255,255,.38);
+}
+
+.balloon{
+    position:fixed;
+    bottom:-160px;
+    width:64px;
+    height:82px;
+    border-radius:50% 50% 47% 47%;
+    z-index:120;
+    animation:balloonUp linear forwards;
+    pointer-events:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:
+        0 12px 28px rgba(210,40,90,.25),
+        inset 8px 10px 12px rgba(255,255,255,.32);
+    border:1px solid rgba(255,255,255,.3);
+}
+
+.balloon::before{
+    content:"";
+    position:absolute;
+    width:13px;
+    height:20px;
+    left:14px;
+    top:13px;
+    border-radius:50%;
+    background:rgba(255,255,255,.4);
+    transform:rotate(25deg);
+}
+
+.balloon:after{
+    content:"";
+    position:absolute;
+    width:1.5px;
+    height:100px;
+    background:rgba(130,65,90,.5);
+    left:50%;
+    top:78px;
+}
+
+@keyframes balloonUp{
+    to{
+        transform:
+            translateY(-120vh)
+            translateX(var(--drift))
+            rotate(5deg);
+        opacity:0;
+    }
+}
+
+.flying-heart{
+    position:fixed;
+    bottom:-80px;
+    z-index:150;
+    pointer-events:none;
+    color:#ff174f;
+    font-size:25px;
+    filter:
+        drop-shadow(0 5px 10px rgba(255,20,70,.4))
+        drop-shadow(0 0 9px rgba(255,40,90,.35));
+    animation:heartFly linear forwards;
+}
+
+@keyframes heartFly{
+    0%{
+        transform:
+            translateY(0)
+            translateX(0)
+            scale(.65)
+            rotate(0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    50%{
+        transform:
+            translateY(-55vh)
+            translateX(var(--heart-drift))
+            scale(1.05)
+            rotate(15deg);
+        opacity:.98;
+    }
+
+    100%{
+        transform:
+            translateY(-120vh)
+            translateX(calc(var(--heart-drift) * -1))
+            scale(.65)
+            rotate(-20deg);
+        opacity:0;
+    }
+}
+
+.firework{
+    position:fixed;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    pointer-events:none;
+    z-index:200;
+    animation:explode 1s ease-out forwards;
+    background:#fff;
+    box-shadow:
+        0 -75px 0 2px #ff174f,
+        53px -53px 0 2px #ff5f8a,
+        75px 0 0 2px #ff9eb9,
+        53px 53px 0 2px #ff174f,
+        0 75px 0 2px #ff6d96,
+        -53px 53px 0 2px #ffb0c5,
+        -75px 0 0 2px #ff174f,
+        -53px -53px 0 2px #ff6d96;
+}
+
+@keyframes explode{
+    0%{
+        transform:scale(.1);
+        opacity:1;
+    }
+    70%{
+        transform:scale(1);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1.35);
+        opacity:0;
+    }
+}
+
+.letter-intro-title{
+    font-size:48px;
+    color:#653e52;
+}
+
+.letter{
+    width:min(88vw,370px);
+    min-height:245px;
+    margin:20px auto;
+    padding:25px 20px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.72),
+            rgba(255,221,233,.78)
+        );
+    border:1px solid rgba(255,255,255,.9);
+    border-radius:15px;
+    box-shadow:
+        0 25px 60px rgba(120,50,85,.22),
+        0 0 35px rgba(255,70,120,.15),
+        inset 0 1px 0 rgba(255,255,255,.9);
+    backdrop-filter:blur(14px);
+    position:relative;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.letter:hover{
+    transform:translateY(-7px) rotate(-1deg);
+    box-shadow:
+        0 30px 70px rgba(120,50,85,.28),
+        0 0 40px rgba(255,70,120,.2);
+}
+
+.letter::before{
+    content:"";
+    position:absolute;
+    inset:10px;
+    border:1px dashed rgba(255,80,125,.45);
+    pointer-events:none;
+}
+
+.letter-seal{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #ff6f99,
+            #e92358 70%
+        );
+    border:1px solid #fff;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:15px auto;
+    font-size:25px;
+    box-shadow:
+        0 10px 25px rgba(220,40,90,.25),
+        0 0 18px rgba(255,50,100,.2);
+}
+
+.letter-title{
+    font-family:'Great Vibes',cursive;
+    font-size:36px;
+    color:#d52f5d;
+}
+
+.letter-small{
+    margin-top:12px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    color:#704f60;
+}
+
+.letter-open{
+    margin-top:13px;
+    font-size:13px;
+    color:#d42d5c;
+}
+
+.open-letter{
+    width:min(92vw,480px);
+    max-height:75vh;
+    overflow-y:auto;
+    padding:32px 25px;
+    background:
+        linear-gradient(
+            145deg,
+            #fffafc,
+            #fff1f5 48%,
+            #fffafd
+        );
+    border:1px solid rgba(255,255,255,.95);
+    border-radius:12px;
+    box-shadow:
+        0 30px 80px rgba(120,50,85,.28),
+        0 0 35px rgba(255,80,130,.12);
+    text-align:left;
+    position:relative;
+    scrollbar-width:thin;
+    scrollbar-color:#ff6b91 transparent;
+}
+
+.open-letter::before{
+    display:none;
+}
+
+.open-letter::after{
+    content:"♥";
+    position:absolute;
+    top:16px;
+    right:19px;
+    color:#ff315f;
+    font-size:18px;
+}
+
+.letter-heading{
+    text-align:center;
+    font-family:'Great Vibes',cursive;
+    font-size:43px;
+    color:#d42e5d;
+    margin-bottom:20px;
+    position:relative;
+    z-index:2;
+}
+
+.letter-body{
+    font-family:'Cormorant Garamond',serif;
+    font-size:21px;
+    line-height:1.55;
+    color:#5c3e4d;
+    position:relative;
+    z-index:2;
+}
+
+.letter-body p{
+    margin-bottom:15px;
+    min-height:1.5em;
+}
+
+.typewriter-cursor{
+    display:inline-block;
+    width:2px;
+    height:1em;
+    margin-left:2px;
+    vertical-align:-.12em;
+    background:#ff315f;
+    animation:cursorBlink .65s infinite;
+}
+
+@keyframes cursorBlink{
+    0%,45%{opacity:1}
+    46%,100%{opacity:0}
+}
+
+.letter-sign{
+    text-align:right;
+    font-family:'Great Vibes',cursive;
+    font-size:35px;
+    color:#d42e5d;
+    opacity:0;
+    transform:translateY(8px);
+    transition:opacity .8s ease,transform .8s ease;
+}
+
+.letter-sign.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.final-title{
+    font-size:51px;
+    color:#653e52;
+}
+
+.final-message{
+    margin:18px auto;
+    max-width:460px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:21px;
+    line-height:1.5;
+    color:#694c5c;
+}
+
+.signature{
+    font-family:'Great Vibes',cursive;
+    font-size:43px;
+    color:#d52f5d;
+    margin-top:12px;
+}
+
+.dua{
+    margin:15px auto;
+    padding:17px;
+    border-radius:18px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.5),
+            rgba(255,220,233,.55)
+        );
+    border:1px solid rgba(255,255,255,.75);
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    line-height:1.5;
+    color:#704c5e;
+    box-shadow:0 15px 35px rgba(120,50,80,.16);
+    backdrop-filter:blur(10px);
+}
+
+.hidden{
+    display:none!important;
+}
+
+
+/* FINAL SLIDE MOBILE FIT - ONLY SLIDE 14 */
+@media (max-width:600px){
+    #slide14{
+        padding:8px 10px;
+        overflow:hidden;
+        align-items:center;
+        justify-content:center;
+    }
+
+    #slide14 .content{
+        width:min(94vw,520px);
+        max-width:100%;
+        margin:auto;
+        padding:0;
+        transform-origin:center center;
+    }
+
+    #slide14 .top-dots{
+        width:170px;
+        height:24px;
+        margin:0 auto 8px;
+    }
+
+    #slide14 .final-title{
+        font-size:38px;
+        line-height:1;
+        margin:0 0 7px;
+    }
+
+    #slide14 .dua{
+        width:100%;
+        margin:8px auto;
+        padding:12px 13px;
+        border-radius:16px;
+        font-size:16px;
+        line-height:1.25;
+    }
+
+    #slide14 .final-message{
+        margin:10px auto;
+        max-width:100%;
+        font-size:17px;
+        line-height:1.3;
+    }
+
+    #slide14 .signature{
+        font-size:32px;
+        line-height:1;
+        margin-top:6px;
+    }
+
+    #slide14 .btn{
+        margin-top:9px;
+        padding:10px 22px;
+        min-width:200px;
+        font-size:14px;
+        line-height:1.2;
+    }
+}
+
+@media (max-width:600px) and (max-height:700px){
+    #slide14{
+        padding:5px 8px;
+    }
+
+    #slide14 .top-dots{
+        margin-bottom:5px;
+    }
+
+    #slide14 .final-title{
+        font-size:34px;
+        margin-bottom:5px;
+    }
+
+    #slide14 .dua{
+        margin:6px auto;
+        padding:9px 11px;
+        font-size:14px;
+    }
+
+    #slide14 .final-message{
+        margin:7px auto;
+        font-size:15px;
+        line-height:1.22;
+    }
+
+    #slide14 .signature{
+        font-size:28px;
+        margin-top:4px;
+    }
+
+    #slide14 .btn{
+        margin-top:6px;
+        padding:9px 20px;
+        min-width:185px;
+        font-size:13px;
+    }
+}
+
+@media(max-width:600px){
+
+    html,body{
+        width:100%;
+        height:100dvh;
+        min-height:100dvh;
+        overflow:hidden;
+    }
+
+    .page{
+        width:100%;
+        height:100dvh;
+        overflow:hidden;
+    }
+
+    .slide{
+        width:100%;
+        height:100dvh;
+        min-height:100dvh;
+        padding:8px 10px;
+        overflow:hidden;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .content{
+        width:min(94vw,520px);
+        max-width:100%;
+        max-height:none;
+        margin:auto;
+        transform-origin:center center;
+    }
+
+    .top-dots{
+        margin-bottom:10px;
+    }
+
+    .main-title{
+        font-size:54px;
+    }
+
+    .name{
+        font-size:76px;
+        margin:8px 0;
+    }
+
+    .btn{
+        margin-top:14px;
+        padding:12px 24px;
+    }
+
+    .cake-area{
+        height:210px;
+    }
+
+    .compliment-card{
+        min-height:250px;
+        padding:20px 17px;
+    }
+
+    .compliment-text{
+        font-size:18px;
+    }
+
+    .game-area{
+        height:300px;
+    }
+
+    .game-status{
+        font-size:18px;
+        min-height:40px;
+    }
+
+    .next-btn{
+        margin-top:10px;
+    }
+
+    .age-title{
+        font-size:40px;
+    }
+
+    .age-sub{
+        font-size:24px;
+        margin-bottom:10px;
+    }
+
+    .age-card{
+        padding:14px 11px;
+    }
+
+    .age-big{
+        font-size:38px;
+    }
+
+    .age-line{
+        font-size:18px;
+        margin:6px 0;
+    }
+
+    .age-live{
+        font-size:13px;
+        margin-top:8px;
+    }
+
+    .time-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:6px;
+        margin-top:9px;
+    }
+
+    .time-box{
+        padding:8px 4px;
+        border-radius:13px;
+    }
+
+    .time-box strong{
+        font-size:22px;
+    }
+
+    .time-box span{
+        font-size:9px;
+    }
+
+    .open-letter{
+        max-height:78dvh;
+        padding:25px 19px;
+    }
+
+    .letter-heading{
+        font-size:38px;
+    }
+
+    .letter-body{
+        font-size:19px;
+    }
+
+    .letter-sign{
+        font-size:32px;
+    }
+
+    .flying-heart{
+        font-size:21px;
+    }
+
+    .balloon{
+        width:55px;
+        height:72px;
+    }
+}
+
+@media(max-width:380px){
+    .slide{
+        padding:6px 8px;
+    }
+
+    .main-title{
+        font-size:48px;
+    }
+
+    .name{
+        font-size:68px;
+    }
+
+    .age-title{
+        font-size:35px;
+    }
+
+    .age-sub{
+        font-size:21px;
+    }
+
+    .game-area{
+        height:280px;
+    }
+}
+
+
+/* FINAL SLIDE 14 ONLY - KEEP EVERYTHING VISIBLE ON PHONES */
+@media (max-width:600px){
+    #slide14{
+        padding:6px 8px;
+        overflow:hidden;
+        align-items:center;
+        justify-content:center;
+    }
+
+    #slide14 .content{
+        width:94vw;
+        max-width:520px;
+        max-height:none;
+        margin:0 auto;
+        padding:0 0 2px;
+        transform-origin:center center;
+    }
+
+    #slide14 .top-dots{
+        width:165px;
+        height:22px;
+        margin:0 auto 6px;
+    }
+
+    #slide14 .final-title{
+        font-size:33px;
+        line-height:1;
+        margin:0 0 5px;
+    }
+
+    #slide14 .dua{
+        width:100%;
+        margin:5px auto;
+        padding:8px 10px;
+        border-radius:14px;
+        font-size:13px;
+        line-height:1.18;
+    }
+
+    #slide14 .final-message{
+        margin:6px auto;
+        max-width:100%;
+        font-size:14px;
+        line-height:1.18;
+    }
+
+    #slide14 .signature{
+        font-size:25px;
+        line-height:1;
+        margin-top:3px;
+    }
+
+    #slide14 .btn{
+        display:inline-block;
+        margin-top:5px;
+        margin-bottom:0;
+        padding:8px 18px;
+        min-width:175px;
+        font-size:12px;
+        line-height:1.1;
+    }
+}
+
+@media (max-width:380px){
+    #slide14 .final-title{font-size:30px;}
+    #slide14 .dua{font-size:12px; padding:7px 9px;}
+    #slide14 .final-message{font-size:13px; line-height:1.15;}
+    #slide14 .signature{font-size:23px;}
+    #slide14 .btn{font-size:11px; min-width:165px; padding:8px 16px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- ================================================= -->
+<!-- SLIDE 1 -->
+<!-- ================================================= -->
+
+<section class="slide active" id="slide1">
+
+<div class="decoration">
+    <span class="float f1">♥</span>
+    <span class="float f2">✦</span>
+    <span class="float f3">♥</span>
+    <span class="float f4">✧</span>
+    <span class="float f5">♥</span>
+    <span class="float f6">✦</span>
+</div>
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="subtitle">A LITTLE SURPRISE FOR YOU</div>
+
+    <div class="main-title">
+        HAPPY<br>BIRTHDAY
+    </div>
+
+    <div class="name">Sara</div>
+
+    <div class="subtitle">
+        A SPECIAL DAY FOR SOMEONE SPECIAL
+    </div>
+
+    <p class="small-text">
+        Today deserves a little extra magic ✨
+    </p>
+
+    <button class="btn" onclick="nextSlide()">
+        ✦ Start the surprise
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 2 -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide2">
+
+<div class="decoration">
+    <span class="float f1">✦</span>
+    <span class="float f2">♥</span>
+    <span class="float f3">♥</span>
+    <span class="float f4">✧</span>
+</div>
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="wish-star">🌟</div>
+
+    <h1 style="font-size:48px;">
+        Make a Wish
+    </h1>
+
+    <div class="compliment-sub">
+        Close your eyes for a moment...
+    </div>
+
+    <p class="small-text">
+        Think of something beautiful.<br>
+        Maybe something your heart really wants.
+    </p>
+
+    <button class="btn" onclick="nextSlide(); startBalloons();">
+        ✦ I'm ready to wish
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 3 -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide3">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 style="font-size:45px;">
+        Make a Wish 🎂
+    </h1>
+
+    <p class="small-text">
+        Three little candles...<br>
+        One beautiful wish.
+    </p>
+
+    <div class="cake-area">
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="cake">
+            <div class="cream"></div>
+        </div>
+
+    </div>
+
+    <div class="cake-message">
+        Blow the candles, birthday girl ♥
+    </div>
+
+    <div class="mic">
+        🎤
+    </div>
+
+    <p class="mic-status" id="micStatus">
+        Tap below and blow near your microphone
+    </p>
+
+    <button
+        class="btn"
+        id="blowBtn"
+        onclick="startBlowDetection()">
+        🎤 Blow Candles
+    </button>
+
+    <button
+        class="btn light"
+        id="manualBlow"
+        onclick="blowCandles()"
+        style="margin-top:9px;">
+        ✨ Tap to blow
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 4 -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide4">
+
+<div class="decoration">
+    <span class="float f1">✦</span>
+    <span class="float f2">♥</span>
+    <span class="float f3">✧</span>
+    <span class="float f4">♥</span>
+</div>
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="age-title">
+        Look How Far You've Come ✨
+    </h1>
+
+    <div class="age-sub">
+        A little reminder of your beautiful journey...
+    </div>
+
+    <div class="age-card">
+
+        <div class="age-big" id="ageBig">
+            Calculating... ♥
+        </div>
+
+        <div class="age-line">
+            From <b>18 September 2008</b> to
+            <b>18 September 2026</b>
+        </div>
+
+        <div class="age-live" id="ageCounter">
+            Calculating your beautiful journey...
+        </div>
+
+        <div class="time-grid">
+
+            <div class="time-box">
+                <strong id="yearsValue">18</strong>
+                <span>Years</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="monthsValue">216</strong>
+                <span>Months</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="daysValue">6,575</strong>
+                <span>Days</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="hoursValue">157,800</strong>
+                <span>Hours</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="minutesValue">9,468,000</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="secondsValue">568,080,000</strong>
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <div class="age-live" id="liveAgeText">
+            The counter will keep counting every second. ♥
+        </div>
+
+    </div>
+
+    <p class="small-text" style="margin-top:14px;">
+        And every second from here makes the story even more beautiful. ♥
+    </p>
+
+    <button class="btn" onclick="nextSlide()">
+        ✦ Continue
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 5 (was slide 7) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide5">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        Things I Love About You
+    </h1>
+
+    <div class="compliment-sub">
+        Wait... there's one more thing
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">♥</div>
+
+        <div class="compliment-title">
+            Your smile
+        </div>
+
+        <div class="compliment-text">
+            There’s something about your smile that I can’t put into words.
+            The moment you smile, everything somehow feels a little brighter.
+            It’s so beautiful and adorable that honestly, even a thousand
+            compliments wouldn’t be enough for it.
+        </div>
+
+        <div class="counter">
+            ♥ 1 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 uncover next →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 6 (was slide 8) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide6">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        Things I Love About You
+    </h1>
+
+    <div class="compliment-sub">
+        And this one is special
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">✦</div>
+
+        <div class="compliment-title">
+            Your eyes
+        </div>
+
+        <div class="compliment-text">
+            Your eyes aren’t just beautiful… they have a magic of their own.
+            They somehow say so much without saying a single word.
+            I could look at them a hundred times and still find something new
+            to admire every single time.
+        </div>
+
+        <div class="counter">
+            ✦ 2 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 uncover next →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 7 (was slide 9) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide7">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        Things I Love About You
+    </h1>
+
+    <div class="compliment-sub">
+        Okay... this one had to be said
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">🌷</div>
+
+        <div class="compliment-title">
+            Your beauty
+        </div>
+
+        <div class="compliment-text">
+            Beautiful doesn’t even feel like a big enough word for you.
+            There’s something so effortlessly gorgeous about you — the way
+            you look, the way you smile, the way you carry yourself.
+            You have the kind of beauty that stays in someone’s mind long
+            after they’ve looked away.
+        </div>
+
+        <div class="counter">
+            🌷 3 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 uncover next →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 8 (was slide 10) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide8">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        Things I Love About You
+    </h1>
+
+    <div class="compliment-sub">
+        The prettiest things aren't always visible
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">🦋</div>
+
+        <div class="compliment-title">
+            Your soul
+        </div>
+
+        <div class="compliment-text">
+            As beautiful as you are on the outside, your soul is what makes
+            you truly unforgettable. There’s something so genuine, soft and
+            special about the person you are inside. And honestly, that inner
+            beauty is what makes everything about you even more beautiful.
+        </div>
+
+        <div class="counter">
+            🦋 4 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 uncover next →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 9 (was slide 11) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide9">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        Things I Love About You
+    </h1>
+
+    <div class="compliment-sub">
+        Some things are beautiful when you hear them
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">♫</div>
+
+        <div class="compliment-title">
+            Your voice
+        </div>
+
+        <div class="compliment-text">
+            There’s something incredibly special about your voice.
+            It has this sweetness and warmth that makes even the simplest
+            words sound beautiful. I don’t know how you do it, but somehow
+            just hearing your voice can make an ordinary moment feel a
+            little more special.
+        </div>
+
+        <div class="counter">
+            ♫ 5 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 uncover next →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 10 (was slide 12) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide10">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="compliment-heading">
+        And Then...
+    </h1>
+
+    <div class="compliment-sub">
+        There is one thing I could never forget
+    </div>
+
+    <div class="compliment-card">
+
+        <div class="pretty-symbol">✧</div>
+
+        <div class="compliment-title">
+            Everything about you
+        </div>
+
+        <div class="compliment-text">
+            Your smile, your eyes, your beauty, your soul, your voice...
+            all of these things are beautiful on their own, but together
+            they make you completely, uniquely you.
+            There is something special about the way you exist,
+            the way you express yourself, the way you make even ordinary
+            things feel a little different.
+
+            <br><br>
+
+            Honestly, everything about you is special.
+            ♥
+        </div>
+
+        <div class="counter">
+            ✧ 6 of 6
+        </div>
+
+    </div>
+
+    <button class="next-btn" onclick="nextSlide()">
+        ✋🏻 one more surprise →
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 11 (was slide 13) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide11">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="game-title">
+        Catch The Hearts ♥
+    </h1>
+
+    <div class="game-sub">
+        Catch all five... there is a little message waiting for you
+    </div>
+
+    <div class="game-area" id="gameArea"></div>
+
+    <div class="game-status" id="gameStatus">
+        Catch heart 1 of 5 ♥
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 12 (was slide 14) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide12">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="letter-intro-title">
+        One Last Little Thing 💌
+    </h1>
+
+    <p class="small-text" style="margin-top:8px;">
+        I wrote something especially for you...
+    </p>
+
+    <div class="letter" onclick="openLetter()">
+
+        <div class="letter-seal">
+            ♥
+        </div>
+
+        <div class="letter-title">
+            For Sara
+        </div>
+
+        <div class="letter-small">
+            A little birthday letter
+        </div>
+
+        <div class="letter-open">
+            Tap the letter to open it ✦
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 13 (was slide 15) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide13">
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <div class="open-letter" id="openLetterBox">
+
+        <div class="letter-heading">
+            A Birthday Letter For You
+        </div>
+
+        <div class="letter-body" id="letterBody">
+
+            <p data-text="Dear Sara,"></p>
+
+            <p data-text="Today is your day, and I genuinely hope it brings you the kind of happiness that stays with you long after the candles are gone."></p>
+
+            <p data-text="I hope this new chapter of your life brings you closer to every dream you have quietly carried in your heart. May you always have reasons to smile, people who truly value you, and the courage to become everything you want to be."></p>
+
+            <p data-text="May you succeed in whatever path you choose. May every effort you make turn into something beautiful, and may every difficult chapter teach you something that makes you stronger and wiser."></p>
+
+            <p data-text="Most importantly, I hope you never forget how special you are. You deserve happiness, peace, success, beautiful opportunities and a life that makes you genuinely proud of yourself."></p>
+
+            <p data-text="Keep shining, keep growing and keep being the person you are."></p>
+
+            <p data-text="Happy Birthday, Sara. ♥"></p>
+
+            <div class="letter-sign" id="letterSign">
+                — Ayaan ♥
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn" onclick="nextSlide()">
+        ✦ There's one final wish
+    </button>
+
+</div>
+</section>
+
+
+<!-- ================================================= -->
+<!-- SLIDE 14 (was slide 16) -->
+<!-- ================================================= -->
+
+<section class="slide" id="slide14">
+
+<div class="decoration">
+    <span class="float f1">♥</span>
+    <span class="float f2">✦</span>
+    <span class="float f3">♥</span>
+    <span class="float f4">✧</span>
+    <span class="float f5">♥</span>
+    <span class="float f6">✦</span>
+</div>
+
+<div class="content">
+
+    <div class="top-dots">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+
+    <h1 class="final-title">
+        Happy Birthday, Sara ♥
+    </h1>
+
+    <div class="dua">
+
+        Allah aapko hamesha khush rakhe, Ameen ♥<br>
+
+        Allah aapki har jaiz dua qubool kare aur aapko
+        hamesha apni hifazat mein rakhe. 🤲🏻
+
+    </div>
+
+    <p class="final-message">
+
+        May this new year of your life be filled with success,
+        peace, happiness and countless beautiful moments.
+
+        <br><br>
+
+        May you achieve every goal you work for,
+        overcome every difficulty with strength,
+        and always find the courage to chase the dreams
+        that truly matter to you.
+
+        <br><br>
+
+        I hope you keep smiling, keep growing,
+        keep shining and keep becoming an even more
+        amazing version of yourself.
+
+        <br><br>
+
+        You deserve every happiness life has to offer,
+        every success your heart wishes for,
+        and a future that makes you genuinely proud.
+
+    </p>
+
+    <div class="signature">
+        — Ayaan ♥
+    </div>
+
+    <button class="btn" onclick="returnToBeginning()">
+        ↩ Return to Beginning
+    </button>
+
+</div>
+</section>
+
+</div>
+
+
+<script>
+
+/* ================================================= */
+/* SLIDE SYSTEM */
+/* ================================================= */
+
+const totalSlides = 14;
+let currentSlide = 1;
+
+function fitActiveSlide(){
+
+    const active = document.querySelector(".slide.active");
+
+    // Do not change any other slide.
+    if(!active || active.id !== "slide14") return;
+
+    const content = active.querySelector(".content");
+
+    if(!content) return;
+
+    content.style.transform = "scale(1)";
+
+    requestAnimationFrame(()=>{
+
+        const availableHeight = Math.max(1, window.innerHeight - 24);
+        const contentHeight = content.getBoundingClientRect().height;
+
+        let scale = 1;
+
+        if(contentHeight > availableHeight){
+            scale = availableHeight / contentHeight;
+        }
+
+        // Extra safety for small phones so the complete final slide,
+        // including the button, stays inside the screen.
+        scale = Math.max(0.48, Math.min(1, scale));
+
+        content.style.transform = `scale(${scale})`;
+    });
+}
+
+window.addEventListener("resize", fitActiveSlide);
+window.addEventListener("orientationchange", ()=>{
+    setTimeout(fitActiveSlide, 120);
+});
+
+function showSlide(number){
+
+    document.querySelectorAll(".slide").forEach(slide=>{
+        slide.classList.remove("active");
+    });
+
+    const target = document.getElementById("slide" + number);
+
+    if(target){
+        target.classList.add("active");
+        currentSlide = number;
+        setTimeout(fitActiveSlide, 20);
+    }
+
+    if(number === 14){
+        startFinalFireworks();
+    }
+}
+
+function nextSlide(){
+
+    if(currentSlide < totalSlides){
+        showSlide(currentSlide + 1);
+    }
+}
+
+
+/* ================================================= */
+/* AGE COUNTER */
+/* ================================================= */
+
+const birthDate = new Date(2008,8,18,0,0,0);
+
+function calculateAge(){
+
+    const now = new Date();
+
+    let years =
+        now.getFullYear() -
+        birthDate.getFullYear();
+
+    let yearStart =
+        new Date(
+            birthDate.getFullYear() + years,
+            8,
+            18,
+            0,
+            0,
+            0
+        );
+
+    if(yearStart > now){
+
+        years--;
+
+        yearStart =
+            new Date(
+                birthDate.getFullYear() + years,
+                8,
+                18,
+                0,
+                0,
+                0
+            );
+    }
+
+    let months =
+        (now.getFullYear() - yearStart.getFullYear()) * 12 +
+        (now.getMonth() - yearStart.getMonth());
+
+    let monthStart = new Date(yearStart);
+
+    monthStart.setMonth(
+        monthStart.getMonth() + months
+    );
+
+    if(monthStart > now){
+
+        months--;
+
+        monthStart = new Date(yearStart);
+
+        monthStart.setMonth(
+            monthStart.getMonth() + months
+        );
+    }
+
+    const remainingMs =
+        now.getTime() -
+        monthStart.getTime();
+
+    const days =
+        Math.floor(
+            remainingMs / 86400000
+        );
+
+    const hours =
+        Math.floor(
+            (remainingMs % 86400000) /
+            3600000
+        );
+
+    const minutes =
+        Math.floor(
+            (remainingMs % 3600000) /
+            60000
+        );
+
+    const seconds =
+        Math.floor(
+            (remainingMs % 60000) /
+            1000
+        );
+
+    const totalSeconds =
+        Math.floor(
+            (now.getTime() -
+            birthDate.getTime()) /
+            1000
+        );
+
+    const totalMinutes =
+        Math.floor(totalSeconds / 60);
+
+    const totalHours =
+        Math.floor(totalSeconds / 3600);
+
+    const totalDays =
+        Math.floor(totalSeconds / 86400);
+
+    const totalMonths =
+        years * 12 + months;
+
+    document.getElementById("ageBig").textContent =
+        years + " years ♥";
+
+    document.getElementById("yearsValue").textContent =
+        years;
+
+    document.getElementById("monthsValue").textContent =
+        months;
+
+    document.getElementById("daysValue").textContent =
+        days.toLocaleString();
+
+    document.getElementById("hoursValue").textContent =
+        hours.toLocaleString();
+
+    document.getElementById("minutesValue").textContent =
+        minutes.toLocaleString();
+
+    document.getElementById("secondsValue").textContent =
+        seconds;
+
+    document.getElementById("ageCounter").innerHTML =
+        `<b>${years} years</b>,
+         <b>${months} months</b>,
+         <b>${days} days</b>,
+         <b>${hours} hours</b>,
+         <b>${minutes} minutes</b>,
+         <b>${seconds} seconds</b>`;
+
+    document.getElementById("liveAgeText").innerHTML =
+        `That's ${totalMonths.toLocaleString()} total months,
+         ${totalDays.toLocaleString()} total days,
+         ${totalHours.toLocaleString()} total hours,
+         ${totalMinutes.toLocaleString()} total minutes,
+         and <b>${totalSeconds.toLocaleString()}</b>
+         total seconds. ♥`;
+}
+
+calculateAge();
+
+setInterval(calculateAge,1000);
+
+
+/* ================================================= */
+/* FIREWORKS */
+/* ================================================= */
+
+function createFirework(){
+
+    const firework =
+        document.createElement("div");
+
+    firework.className =
+        "firework";
+
+    firework.style.left =
+        (10 + Math.random()*80) + "vw";
+
+    firework.style.top =
+        (8 + Math.random()*65) + "vh";
+
+    document.body.appendChild(firework);
+
+    setTimeout(()=>{
+        firework.remove();
+    },1200);
+}
+
+function startFinalFireworks(){
+
+    startFlyingHearts();
+
+    for(let i=0;i<24;i++){
+
+        setTimeout(()=>{
+
+            createFirework();
+
+        },i*300);
+    }
+
+    setTimeout(()=>{
+        startFlyingHearts();
+    },2500);
+}
+
+
+/* ================================================= */
+/* BALLOONS + FLYING HEARTS */
+/* ================================================= */
+
+let balloonAnimationRunning = false;
+
+function createFlyingHeart(){
+
+    const heart =
+        document.createElement("div");
+
+    heart.className =
+        "flying-heart";
+
+    const symbols = [
+        "♥",
+        "♥",
+        "♥",
+        "♡",
+        "♥",
+        "💗"
+    ];
+
+    heart.textContent =
+        symbols[
+            Math.floor(
+                Math.random()*symbols.length
+            )
+        ];
+
+    heart.style.left =
+        (Math.random()*96) + "vw";
+
+    heart.style.setProperty(
+        "--heart-drift",
+        ((Math.random()*180)-90) + "px"
+    );
+
+    heart.style.fontSize =
+        (18 + Math.random()*18) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random()*4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+}
+
+function startFlyingHearts(){
+
+    for(let i=0;i<24;i++){
+
+        setTimeout(()=>{
+
+            createFlyingHeart();
+
+        },i*170);
+    }
+}
+
+function startBalloons(){
+
+    const balloonSymbols =
+        ["♥","♥","♥","♡","♥","♥"];
+
+    const balloonColors = [
+        "#ff315f",
+        "#ff4d78",
+        "#ff6f96",
+        "#f72f68",
+        "#ff86a8",
+        "#e92559"
+    ];
+
+    for(let i=0;i<18;i++){
+
+        setTimeout(()=>{
+
+            const balloon =
+                document.createElement("div");
+
+            balloon.className =
+                "balloon";
+
+            balloon.style.left =
+                (Math.random()*92) + "vw";
+
+            balloon.style.setProperty(
+                "--drift",
+                ((Math.random()*180)-90) + "px"
+            );
+
+            balloon.style.background =
+                balloonColors[
+                    Math.floor(
+                        Math.random()*balloonColors.length
+                    )
+                ];
+
+            balloon.textContent =
+                balloonSymbols[
+                    Math.floor(
+                        Math.random() *
+                        balloonSymbols.length
+                    )
+                ];
+
+            balloon.style.fontSize =
+                "24px";
+
+            balloon.style.fontWeight =
+                "700";
+
+            balloon.style.color =
+                "#fff";
+
+            balloon.style.animationDuration =
+                (6 + Math.random()*4) + "s";
+
+            document.body.appendChild(balloon);
+
+            setTimeout(()=>{
+                balloon.remove();
+            },11000);
+
+        },i*130);
+    }
+
+    startFlyingHearts();
+
+    if(!balloonAnimationRunning){
+
+        balloonAnimationRunning = true;
+
+        let heartInterval =
+            setInterval(()=>{
+
+                createFlyingHeart();
+
+                if(
+                    currentSlide !== 2 &&
+                    currentSlide !== 3 &&
+                    currentSlide !== 14
+                ){
+
+                    clearInterval(heartInterval);
+                    balloonAnimationRunning = false;
+                }
+
+            },850);
+
+        setTimeout(()=>{
+
+            clearInterval(heartInterval);
+            balloonAnimationRunning = false;
+
+        },12000);
+    }
+}
+
+
+/* ================================================= */
+/* CANDLE + MICROPHONE */
+/* ================================================= */
+
+let audioContext = null;
+let analyser = null;
+let microphoneStream = null;
+let micRunning = false;
+let candlesBlown = false;
+let blowFallbackTimer = null;
+
+function makeBlowButtonManual(){
+
+    const btn =
+        document.getElementById("blowBtn");
+
+    const status =
+        document.getElementById("micStatus");
+
+    if(!btn || candlesBlown)
+        return;
+
+    btn.textContent =
+        "✨ Tap to blow";
+
+    btn.onclick =
+        blowCandles;
+
+    status.textContent =
+        "Didn't catch the blow? Tap the button to continue ✨";
+}
+
+function startBlowDetection(){
+
+    if(candlesBlown)
+        return;
+
+    const status =
+        document.getElementById("micStatus");
+
+    const btn =
+        document.getElementById("blowBtn");
+
+    clearTimeout(
+        blowFallbackTimer
+    );
+
+    status.textContent =
+        "Requesting microphone... 🎤";
+
+    btn.textContent =
+        "🎤 Listening...";
+
+    if(
+        !navigator.mediaDevices ||
+        !navigator.mediaDevices.getUserMedia
+    ){
+
+        makeBlowButtonManual();
+        return;
+    }
+
+    navigator.mediaDevices
+        .getUserMedia({audio:true})
+        .then(async stream=>{
+
+            microphoneStream =
+                stream;
+
+            try{
+
+                audioContext =
+                    new (
+                        window.AudioContext ||
+                        window.webkitAudioContext
+                    )();
+
+                if(
+                    audioContext.state ===
+                    "suspended"
+                ){
+
+                    await audioContext.resume();
+                }
+
+                analyser =
+                    audioContext.createAnalyser();
+
+                analyser.fftSize =
+                    512;
+
+                analyser.smoothingTimeConstant =
+                    0.25;
+
+                const source =
+                    audioContext
+                        .createMediaStreamSource(
+                            stream
+                        );
+
+                source.connect(
+                    analyser
+                );
+
+                micRunning = true;
+
+                status.textContent =
+                    "Listening... blow into your microphone now 🎤";
+
+                detectBlow();
+
+                blowFallbackTimer =
+                    setTimeout(()=>{
+
+                        if(!candlesBlown)
+                            makeBlowButtonManual();
+
+                    },4000);
+
+            }catch(error){
+
+                stopMicrophone();
+                makeBlowButtonManual();
+            }
+
+        })
+        .catch(()=>{
+
+            stopMicrophone();
+            makeBlowButtonManual();
+        });
+}
+
+function detectBlow(){
+
+    if(
+        !micRunning ||
+        candlesBlown ||
+        !analyser
+    )
+        return;
+
+    const data =
+        new Uint8Array(
+            analyser.frequencyBinCount
+        );
+
+    analyser.getByteFrequencyData(
+        data
+    );
+
+    let total = 0;
+
+    for(let i=0;i<data.length;i++){
+        total += data[i];
+    }
+
+    const average =
+        total / data.length;
+
+    if(average > 22){
+
+        clearTimeout(
+            blowFallbackTimer
+        );
+
+        blowCandles();
+
+        return;
+    }
+
+    requestAnimationFrame(
+        detectBlow
+    );
+}
+
+function stopMicrophone(){
+
+    micRunning = false;
+
+    clearTimeout(
+        blowFallbackTimer
+    );
+
+    if(microphoneStream){
+
+        microphoneStream
+            .getTracks()
+            .forEach(track=>{
+                track.stop();
+            });
+
+        microphoneStream = null;
+    }
+
+    if(audioContext){
+
+        audioContext
+            .close()
+            .catch(()=>{});
+
+        audioContext = null;
+    }
+
+    analyser = null;
+}
+
+function blowCandles(){
+
+    if(candlesBlown)
+        return;
+
+    candlesBlown = true;
+
+    stopMicrophone();
+
+    document
+        .querySelectorAll(".flame")
+        .forEach(flame=>{
+            flame.classList.add("off");
+        });
+
+    document.getElementById(
+        "micStatus"
+    ).textContent =
+        "Wish made... ♥";
+
+    document.getElementById(
+        "blowBtn"
+    ).classList.add("hidden");
+
+    document.getElementById(
+        "manualBlow"
+    ).classList.add("hidden");
+
+    startBalloons();
+
+    setTimeout(()=>{
+
+        for(let i=0;i<20;i++){
+
+            setTimeout(
+                ()=>createFirework(),
+                i*190
+            );
+        }
+
+    },300);
+
+    setTimeout(()=>{
+
+        startFlyingHearts();
+
+    },700);
+
+    setTimeout(()=>{
+
+        if(currentSlide === 3){
+            showSlide(4);
+        }
+
+    },2500);
+}
+
+
+/* ================================================= */
+/* HEART GAME */
+/* ================================================= */
+
+let heartCount = 0;
+
+const heartMessages = [
+
+    "I love you ♥",
+
+    "You deserve every happiness in your life ✦",
+
+    "You deserve to be loved, respected and valued always 🌷",
+
+    "Never forget how genuinely special you are 🦋",
+
+    "And no matter how many hearts you catch... you deserve a world full of them ♥"
+
+];
+
+function createHeart(){
+
+    const area =
+        document.getElementById(
+            "gameArea"
+        );
+
+    const heart =
+        document.createElement(
+            "div"
+        );
+
+    heart.className =
+        "catch-heart";
+
+    heart.innerHTML =
+        "♥";
+
+    const maxX =
+        area.clientWidth - 60;
+
+    const maxY =
+        area.clientHeight - 60;
+
+    heart.style.left =
+        Math.max(
+            5,
+            Math.random()*maxX
+        ) + "px";
+
+    heart.style.top =
+        Math.max(
+            5,
+            Math.random()*maxY
+        ) + "px";
+
+    heart.onclick =
+        function(){
+
+            heart.remove();
+
+            heartCount++;
+
+            const status =
+                document.getElementById(
+                    "gameStatus"
+                );
+
+            if(heartCount <= 5){
+
+                status.innerHTML =
+                    heartMessages[
+                        heartCount-1
+                    ];
+            }
+
+            if(heartCount < 5){
+
+                setTimeout(()=>{
+
+                    status.innerHTML =
+                        `Catch heart ${heartCount+1} of 5 ♥`;
+
+                    createHeart();
+
+                },1700);
+
+            }else{
+
+                status.innerHTML =
+                    `You caught all five ♥<br>
+                     You deserve every beautiful thing life has to offer.`;
+
+                setTimeout(()=>{
+
+                    if(currentSlide === 11){
+                        nextSlide();
+                    }
+
+                },3000);
+            }
+        };
+
+    area.appendChild(
+        heart
+    );
+}
+
+function startHeartGame(){
+
+    heartCount = 0;
+
+    const area =
+        document.getElementById(
+            "gameArea"
+        );
+
+    area.innerHTML = "";
+
+    document.getElementById(
+        "gameStatus"
+    ).innerHTML =
+        "Catch heart 1 of 5 ♥";
+
+    createHeart();
+}
+
+
+/* ================================================= */
+/* AUTO HEART GAME */
+/* ================================================= */
+
+const originalShowSlide =
+    showSlide;
+
+showSlide =
+    function(number){
+
+        originalShowSlide(number);
+
+        if(number === 11){
+
+            setTimeout(()=>{
+
+                startHeartGame();
+
+            },300);
+        }
+    };
+
+
+/* ================================================= */
+/* LETTER TYPEWRITER */
+/* ================================================= */
+
+let letterTyping = false;
+
+async function typeLetter(){
+
+    if(letterTyping)
+        return;
+
+    const body =
+        document.getElementById(
+            "letterBody"
+        );
+
+    const sign =
+        document.getElementById(
+            "letterSign"
+        );
+
+    const box =
+        document.getElementById(
+            "openLetterBox"
+        );
+
+    if(!body || !sign)
+        return;
+
+    letterTyping = true;
+
+    sign.classList.remove("show");
+
+    const paragraphs =
+        body.querySelectorAll(
+            "p[data-text]"
+        );
+
+    paragraphs.forEach(p=>{
+        p.textContent = "";
+    });
+
+    const cursor =
+        document.createElement(
+            "span"
+        );
+
+    cursor.className =
+        "typewriter-cursor";
+
+    for(let p of paragraphs){
+
+        const text =
+            p.getAttribute(
+                "data-text"
+            );
+
+        p.appendChild(cursor);
+
+        for(let i=0;i<text.length;i++){
+
+            cursor.before(
+                document.createTextNode(
+                    text[i]
+                )
+            );
+
+            let speed = 17;
+
+            if(text[i] === " "){
+                speed = 4;
+            }
+
+            if(
+                text[i] === "." ||
+                text[i] === "," ||
+                text[i] === "!" ||
+                text[i] === "?" ||
+                text[i] === "♥"
+            ){
+                speed = 45;
+            }
+
+            await new Promise(
+                resolve =>
+                    setTimeout(
+                        resolve,
+                        speed
+                    )
+            );
+
+            if(box){
+
+                box.scrollTop =
+                    box.scrollHeight;
+            }
+        }
+
+        cursor.remove();
+
+        await new Promise(
+            resolve =>
+                setTimeout(
+                    resolve,
+                    90
+                )
+        );
+    }
+
+    await new Promise(
+        resolve =>
+            setTimeout(
+                resolve,
+                200
+            )
+    );
+
+    sign.classList.add(
+        "show"
+    );
+
+    letterTyping = false;
+
+    if(box){
+        box.scrollTop =
+            box.scrollHeight;
+    }
+}
+
+function openLetter(){
+
+    showSlide(13);
+
+    setTimeout(()=>{
+
+        typeLetter();
+
+    },400);
+}
+
+
+/* ================================================= */
+/* RETURN TO BEGINNING */
+/* ================================================= */
+
+function returnToBeginning(){
+
+    stopMicrophone();
+
+    candlesBlown = false;
+
+    document
+        .querySelectorAll(".flame")
+        .forEach(flame=>{
+            flame.classList.remove(
+                "off"
+            );
+        });
+
+    document
+        .getElementById("blowBtn")
+        .classList.remove(
+            "hidden"
+        );
+
+    document.getElementById(
+        "blowBtn"
+    ).textContent =
+        "🎤 Blow Candles";
+
+    document.getElementById(
+        "blowBtn"
+    ).onclick =
+        startBlowDetection;
+
+    document
+        .getElementById("manualBlow")
+        .classList.remove(
+            "hidden"
+        );
+
+    document.getElementById(
+        "micStatus"
+    ).textContent =
+        "Tap below and blow near your microphone";
+
+    showSlide(1);
+}
+
+
+/* ================================================= */
+/* OPENING FIREWORK */
+/* ================================================= */
+
+setTimeout(()=>{
+
+    fitActiveSlide();
+
+},80);
+
+setTimeout(()=>{
+
+    createFirework();
+
+},700);
+
+</script>
+
+</body>
+</html>
